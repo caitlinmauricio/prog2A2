@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox fx:controller="controller.AgencyController" alignment="CENTER" styleClass="background" prefHeight="200.0" prefWidth="800.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1">
+        <ImageView preserveRatio="true" fitHeight="195">
+            <Image url="/image/agency.png"/>
+        </ImageView>
+        
+        <Separator/>
+        <GridPane alignment="CENTER">	
+            <Label fx:id="agencyLbl" text="" styleClass="heading"/>
+        </GridPane>
+
+        <Separator/>
+        <HBox>
+            <Button maxWidth="1.7976931348623157E308" styleClass="button" onAction="#handleFlights" text="Explore Flights" HBox.hgrow="ALWAYS" fx:id="flightsBtn"/>
+            <Button maxWidth="1.7976931348623157E308" styleClass="button" onAction="#handleDest" text="Explore Destinations" HBox.hgrow="ALWAYS" fx:id="destBtn"/>
+            <Button maxWidth="1.7976931348623157E308" styleClass="button" onAction="#handleTrip" text="Book a Trip" HBox.hgrow="ALWAYS" fx:id="tripBtn"/>
+            <Button maxWidth="1.7976931348623157E308" styleClass="button" onAction="#handleExit" text="Exit" HBox.hgrow="ALWAYS" fx:id="exitBtn"/>
+        </HBox>
+
+        <stylesheets>
+            <URL value="@style.css"/>
+        </stylesheets>
+</VBox> 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox fx:controller="controller.Flights.ExploreFlightsController" alignment="CENTER" styleClass="background" prefHeight="200.0" prefWidth="800.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1">
+        <ImageView preserveRatio="true" fitHeight="200">
+            <Image url="/image/flight.png"/>
+        </ImageView>
+        
+        <Separator/>
+        <GridPane alignment="CENTER">	
+            <Label fx:id="flightsLbl" text="" styleClass="heading"/>
+        </GridPane>
+
+        <Separator/>
+        <HBox>
+            <Button maxWidth="1.7976931348623157E308" styleClass="button" onAction="#handleDisplay" text="View All Flights" HBox.hgrow="ALWAYS" fx:id="viewBtn"/>
+            <Button maxWidth="1.7976931348623157E308" styleClass="button" onAction="#handleFiltered" text="View Flights by Country" HBox.hgrow="ALWAYS" fx:id="filteredBtn"/>
+            <Button maxWidth="1.7976931348623157E308" styleClass="button" onAction="#handleAdd" text="Add Flight" HBox.hgrow="ALWAYS" fx:id="addBtn"/>
+            <Button maxWidth="1.7976931348623157E308" styleClass="button" onAction="#handleRemove" text="Remove Flight" HBox.hgrow="ALWAYS" fx:id="removeBtn"/>
+            <Button maxWidth="1.7976931348623157E308" styleClass="button" onAction="#handleExit" text="Close" HBox.hgrow="ALWAYS" fx:id="closeBtn"/>
+        </HBox>
+
+        <stylesheets>
+            <URL value="@/view/style.css"/>
+        </stylesheets>
+</VBox>
